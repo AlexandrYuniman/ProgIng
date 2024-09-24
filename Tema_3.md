@@ -38,7 +38,7 @@ else:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab1.png)
 
 ## Выводы
-
+Вводятся две переменные и сравниваются между собой
 
 ## Лабораторная работа №2
 
@@ -58,7 +58,7 @@ else:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab2.png)
 
 ## Выводы
-
+Вводится одна переменная и прогоняется по условиям задачи
 
 ## Лабораторная работа №3
 
@@ -77,7 +77,7 @@ else:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab3.png)
 
 ## Выводы
-
+С помощью оператора in проверятся наличие элемента в массиве
 
 ## Лабораторная работа №4
 
@@ -98,7 +98,7 @@ else:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab4.png)
 
 ## Выводы
-
+С помощью оператора in проверятся наличие элемента в массиве и проверяется на четность 
 
 ## Лабораторная работа №5
 
@@ -122,7 +122,7 @@ for i in range(10):
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab5.png)
 
 ## Выводы
-
+Проверяются разные виды сравнений в цикле
 
 ## Лабораторная работа №6
 
@@ -143,7 +143,7 @@ else:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab6.png)
 
 ## Выводы
-
+При помощи цикла for определяется есть ли переменная value в строке string
 
 ## Лабораторная работа №7
 
@@ -160,7 +160,7 @@ print(sum)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab7.png)
 
 ## Выводы
-
+Использование цикло в обратной последовательности
 
 ## Лабораторная работа №8
 
@@ -178,7 +178,7 @@ print(f'Введенное число >= 2 в {k}-ой степени')
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab8.png)
 
 ## Выводы
-
+Считается степень числа 2
 
 ## Лабораторная работа №9
 
@@ -194,7 +194,7 @@ for i in range(5):
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab9.png)
 
 ## Выводы
-
+Использование вложенных циклов с условием
 
 ## Лабораторная работа №10
 
@@ -218,5 +218,87 @@ else:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/lab10.png)
 
 ## Выводы
+Использование флага
 
+## Самостоятельная работа №1
+
+### Напишите программу, которая преобразует 1 в 31.
+
+
+```python
+res = 1
+for i in range(2):
+    res *= 5
+    res += 1
+print(res)
+```
+### Результат.
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/sam1.png)
+
+## Выводы
+1 в цикле сначала умножается на 5, потом прибавляется 1, и так два раза
+
+## Самостоятельная работа №2
+
+### Напишите программу, которая фразу «Hello World» выводит в обратном порядке, и каждая буква находится в одной строке консоли. Пример вывода в консоль:
+
+```python
+string = 'Hello World'
+for elem in reversed(string):
+    print(elem)
+```
+### Результат.
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/sam2.png)
+
+## Выводы
+Функция reversed() возвращает итератор, который перебирает элементы оригинала в обратном порядке
+
+## Самостоятельная работа №3
+
+### Напишите программу, на вход которой поступает значение из консоли, оно должно быть числовым и в диапазоне от 0 до 10 включительно (это необходимо учесть в программе). Если вводимое число не подходит по требованиям, то необходимо вывести оповещение об этом в консоль и остановить программу.
+
+```python
+value = int(input('Введите число '))
+if value >= 0 and value <= 3:
+    print('Число находится в диапазоне 0-3')
+elif value > 3 and value <= 6:
+    print('Число находится в диапазоне 4-6')
+elif value > 6 and value <= 10:
+    print('Число находится в диапазоне 7-10')
+else:
+    print('Введенное число не подходит по требованиям')
+```
+### Результат.
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/sam3.png)
+
+## Выводы
+Вводится число и прогоняется по условиям задачи
+
+## Самостоятельная работа №4
+
+### Манипулирование строками. Напишите программу на Python, которая принимает предложение (на английском) в качестве входных данных от пользователя. Выполните следующие операции и отобразите
+результаты:
+
+
+```python
+string = input('Введите предложение на английском: ')
+print(f"Длина предложения: {len(string)}")
+string = string.lower()
+vowelsCount = 0
+vowel = 'aeiou'
+for letter in string:
+    if letter in vowel:
+        vowelsCount += 1
+print(f"Количество гласных {vowelsCount}")
+string = string.replace('ugly', 'beauty')
+if string.startswith('The') or string.endswith('end'):
+    print("Строка начинается на The И заканчивается на end")
+```
+### Результат.
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/sam4.1.png)
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/sam4.2.png)
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_3/pic/sam4.3.png)
+
+## Выводы
+Вводится строка и с ней производятся необходимые манипуляции
 
