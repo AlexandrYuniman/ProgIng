@@ -44,6 +44,7 @@ print(key, access)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/lab1.png)
 
 ## Выводы
+При вводе номера кабинета выводится ключ и доступ к нему.
 
 ## Лабораторная работа №2
 
@@ -67,7 +68,7 @@ pprint(my_dict)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/lab2.png)
 
 ## Выводы
-
+Создается функция, благодаря который дабвлять значения в словрь
 
 ## Лабораторная работа №3
 
@@ -83,7 +84,7 @@ print(list(result))
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/lab3.png)
 
 ## Выводы
-
+Строка "нарезается" переходя в кортеж, а потом из кортежа с список.
 
 ## Лабораторная работа №4
 
@@ -103,7 +104,7 @@ personal_info(*bob)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/lab4.png)
 
 ## Выводы
-
+Функция принимает кортеж и выводит информацию.
 
 ## Лабораторная работа №5
 
@@ -123,7 +124,7 @@ print(tuple_sort((5,4,3,'2,1',2.2)))
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/lab5.png)
 
 ## Выводы
-
+Сортировка происходит только в случае если все элементы кортежа int'ы
 
 ## Самостоятельная работа №1
 
@@ -141,6 +142,7 @@ print(tpl)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/sam1.png)
 
 ## Выводы
+При помощи функции split строка чисел сначала делится по пробелу и становится список, после чего из списка преобразуется в кортеж.
 
 ## Самостоятельная работа №2
 
@@ -165,6 +167,8 @@ print(delete_elem(*third))
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/sam2.png)
 
 ## Выводы
+Т.к. Кортеж неизменяем, то создается сначала список, после чего с ним происходят преобразования, а потом обратно в кортеж.
+
 
 ## Самостоятельная работа №3
 
@@ -191,6 +195,8 @@ print(func(inp))
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/sam3.png)
 
 ## Выводы
+Counter - возвращает словарь, где элементы хранятся в виде словарных ключей, а их счетчики хранятся в виде значений словаря. most_common возвращает список из наиболее популярных элементов.
+
 
 ## Самостоятельная работа №5
 
@@ -219,3 +225,4 @@ print(delete_repeats(third))
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_6/pic/sam5.png)
 
 ## Выводы
+seen - список, в котором есть числа, которые уже встречались, если цифры нет в этом списке, то она добавляется к результату. 
