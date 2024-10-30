@@ -29,7 +29,8 @@ class Car:
 
 my_car = Car("Lada", "2107")
 ```
-## Выводы
+## Выводы 
+Сначала создаетс класс Car с атрибутами призводитель и модель, после чего создается экземпляр этого класса
 
 
 ## Лабораторная работа №2
@@ -49,9 +50,9 @@ my_car = Car("Lada", "2107")
 my_car.drive()
 ```
 ### Результат.
-
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/lab2.png)
 ## Выводы
-
+Класс Car дополнился методом drive, этот метод выводит в консоль информацию о том, что машина "едет"
 
 ## Лабораторная работа №3
 
@@ -82,7 +83,7 @@ my_electric_car.charge()
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/lab3.png)
 
 ## Выводы
-
+Создается новый класс ElectricCar, который наследует класс Car, добавляется атрибут battery_capacity и метод charge
 
 ## Лабораторная работа №4
 
@@ -106,7 +107,7 @@ my_car.drive()
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/lab4.png)
 
 ## Выводы
-
+Атрибут класса make становится защищенным, а model приватным
 
 ## Лабораторная работа №5
 
@@ -143,7 +144,7 @@ for shape in shapes:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/lab5.png)
 
 ## Выводы
-
+Классы Rectangle и Circle наследуют класс Car и в них обоих есть метод area, которы вычисляет площадь фигуры, в зависимости от того, какие аргументы были переданы
 
 ## Самостоятельная работа №1
 
@@ -163,6 +164,7 @@ print(my_animal.name)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/sam1.png)
 
 ## Выводы
+Создается класс Animal с атрибутами name, length, weigth и созддается экземпляр этого класса.
 
 ## Самостоятельная работа №2
 
@@ -186,6 +188,7 @@ my_animal.run(14)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/sam2.png)
 
 ## Выводы
+К классу Animal добавляется метод run, и животное начинает "бежать"
 
 ## Самостоятельная работа №3
 
@@ -217,6 +220,7 @@ my_wolf.run(60)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/sam3.png)
 
 ## Выводы
+Класс Wolf наследует класс Animal и в нем есть метод Howl, волк воет, также у класса добавляется атрибут role, указывающий на роль волка в стае
 
 ## Самостоятельная работа №4
 
@@ -248,6 +252,7 @@ print(my_wolf.length)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/sam4.png)
 
 ## Выводы
+name становится защищенным атрибутом, а length, weigth - приватными
 
 ## Самостоятельная работа №5
 
@@ -291,4 +296,4 @@ my_lion.sound()
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_8/pic/sam5.png)
 
 ## Выводы
-
+Классы Wolf и Lion переопределяют метод sound, волк воет, а лев рычит
