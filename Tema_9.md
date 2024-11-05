@@ -41,7 +41,9 @@ person2.surname = 'Петров'
 ### Результат.
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/lab1.png)
 
-## Выводы
+## Выводы 
+Создается класс, в его свойствах указывается имя. В функции __init__ происходит проверка на то угадал человек имя, или же нет.
+
 
 ## Лабораторная работа №2
 
@@ -73,7 +75,7 @@ icecream.composition()
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/lab2.png)
 
 ## Выводы
-
+Создается класс, в функции __init__ функция isinstance() проверяет, является ли объект строкой или нет, если нет, то ingredient = None, в функции composition, если ingredient != None, то выводится сообщение о том, какая добавка в мороженом.
 
 ## Лабораторная работа №3
 
@@ -109,7 +111,7 @@ print(obj.get_value())
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/lab3.png)
 
 ## Выводы
-
+Создается класс с сеттером, геттером и деструктором. Ошибка выводится, потому что геттер пытается достать несуществующий атрибут 
 
 ## Лабораторная работа №4
 
@@ -137,7 +139,7 @@ print(f"Cat is {cat.className}, but they say {cat.sounds}")
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/lab4.png)
 
 ## Выводы
-
+В данной задаче класс Dog и Сat наследуют класс Mammal, но добавляя свои атрибуты, species и sounds.
 
 ## Лабораторная работа №5
 
@@ -166,7 +168,7 @@ greet(John)
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/lab5.png)
 
 ## Выводы
-
+Создается два класса со статическим методом greeting, а также создается метод greet, в который передаются экземпляры классов. В зависимости от того, какой экземпляр передан выводится приветствие на соответствующем языке.
 
 ## Самостоятельная работа №1
 
@@ -174,16 +176,16 @@ greet(John)
 
 ```python
 class Tomato:
-    states = {0: 'отсутствует', 1: 'цветение', 2: 'зеленый', 3: 'красный'}
+    states = {0: 'отсутствует', 1: 'цветение', 2: 'зеленый', 3: 'красный'} # Свойство содержит стадии созревания помидора
     
     def __init__(self, index):
         self._index = index
         self._state = 0  
     
-    def grow(self):
+    def grow(self): #Переводит томат на следующую стадию созревания
         self._state += 1
     
-    def is_ripe(self):
+    def is_ripe(self): #Проверяет созрел ли томат
         if self._state == 3:
             return True
         else:
@@ -193,17 +195,17 @@ class TomatoBush:
     def __init__(self, numb_of_tomatoes):
         self.tomatoes = [Tomato(i) for i in range(numb_of_tomatoes)]
     
-    def grow_all(self):
+    def grow_all(self): #Переводит все объекты из списка томатов на следующий этап созревания
         for tomato in self.tomatoes:
             tomato.grow()
     
-    def all_are_ripe(self):        
+    def all_are_ripe(self):   #Проверяет все ли томаты из списка спелые     
         if (all(tomato.is_ripe() for tomato in self.tomatoes)):
             return True
         else:
             return False
     
-    def give_away_all(self):
+    def give_away_all(self): #Чистит список томатов после сбора урожая
         self.tomatoes.clear()
         
 
@@ -213,11 +215,11 @@ class Gardener:
         self._plant = plant
         #Динамические свойства
     
-    def work(self):
+    def work(self): #В этом методе садовник работает, а томаты становятся зрелыми
         self._plant.grow_all()
         print(f"Садовник {self.name} поработал, стадия созревания теперь {self._plant.tomatoes[0].states[self._plant.tomatoes[0]._state]}" )
     
-    def harvest(self):
+    def harvest(self): #Метод проверяет готовность урожая, и в случае если все спелые, то собирает урожай
         if self._plant.all_are_ripe():
             print("Урожай собран")
             self._plant.give_away_all()    
@@ -226,7 +228,7 @@ class Gardener:
             print("Томаты еще не созрели, рано собирать урожай")
     
     @staticmethod
-    def knowledge_base():
+    def knowledge_base(): #Вывроит в консоль справку по садоводству 
         print("Справка по садоводству")
 
 Gardener.knowledge_base()
@@ -246,19 +248,19 @@ firstGardener.harvest()
 ```
 ### Тесты
 1. Вызов справки по садоводству
-    ```python
-    firstGardener.work()
-    ```
+```python
+Gardener.knowledge_base()
+```
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/sam1.png)
 
 2. Создание объектов классов TomatoBush и Gardener
-   ```python
-   firstBush = TomatoBush(3)
-    secondBush = TomatoBush(5)
+```python
+firstBush = TomatoBush(3)
+secondBush = TomatoBush(5)
 
-    firstGardener = Gardener('Петя', firstBush)
-    secondGardener = Gardener("Вася", secondBush)
-   ```
+firstGardener = Gardener('Петя', firstBush)
+secondGardener = Gardener("Вася", secondBush)
+```
 
 3.Используя объект класса Gardener, поухаживайте за кустом с помидорами.
 ```python
