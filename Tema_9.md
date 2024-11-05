@@ -244,6 +244,39 @@ firstGardener.harvest()
 
 
 ```
-### Результат.
+### Тесты
+1. Вызов справки по садоводству
+    ```python
+    firstGardener.work()
+    ```
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/sam1.png)
 
+2. Создание объектов классов TomatoBush и Gardener
+   ```python
+   firstBush = TomatoBush(3)
+    secondBush = TomatoBush(5)
+
+    firstGardener = Gardener('Петя', firstBush)
+    secondGardener = Gardener("Вася", secondBush)
+   ```
+
+3.Используя объект класса Gardener, поухаживайте за кустом с помидорами.
+```python
+firstGardener.work()
+```
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/sam3.png)
+
+4.Попробуйте собрать урожай, когда томаты еще не дозрели.
+```python
+firstGardener.harvest()
+```
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/sam4.png)
+
+5.Соберите урожай
+```python
+firstGardener.work()
+firstGardener.work()
+firstGardener.work()
+firstGardener.harvest()
+```
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_9/pic/sam5.png)
