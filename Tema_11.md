@@ -140,7 +140,7 @@ def fib(n):
         yield second
         first, second = second, first + second
 
-print(list(fib(10))) 
+print(list(fib(200))) 
 ```
 ### Результат.
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/sam1.png)
