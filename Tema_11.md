@@ -143,7 +143,7 @@ def fib(n):
 print(list(fib(10))) 
 ```
 ### Результат.
-![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/sam0.png)
+![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/sam1.png)
 
 ## Выводы
 Программа считает числа Фибоначчи с минимальными затратами ресурсов
