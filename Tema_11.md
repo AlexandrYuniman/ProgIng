@@ -30,6 +30,7 @@ for item in numbers:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/lab1.png)
 
 ## Выводы 
+Создается список и проходимся по нему итератором
 
 
 ## Лабораторная работа №2
@@ -61,7 +62,7 @@ if __name__ == '__main__':
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/lab2.png)
 
 ## Выводы 
-
+Создается класс итератор, в котором реализуются методы __iter__ и __next__(
 
 ## Лабораторная работа №3
 
@@ -83,7 +84,7 @@ for i in a:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/lab3.png)
 
 ## Выводы 
-
+Список генерируется с помощью генераторв, после чего выводится
 
 ## Лабораторная работа №4
 
@@ -105,7 +106,7 @@ for i in b:
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/lab4.png)
 
 ## Выводы 
-
+Список создается при помощи генераторного выражения
 
 ## Лабораторная работа №5
 
@@ -127,7 +128,7 @@ if __name__ == '__main__':
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/lab5.png)
 
 ## Выводы 
-
+Список как в первом задании, но с использованием генератора и yield
 
 ## Самостоятельная работа №5
 
@@ -145,4 +146,4 @@ print(list(fib(10)))
 ![Меню](https://github.com/AlexandrYuniman/ProgIng/blob/Tema_11/pic/sam1.png)
 
 ## Выводы
-
+Программа считает числа Фибоначчи с минимальными затратами ресурсов
